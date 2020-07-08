@@ -5,9 +5,11 @@ const PORT = 5000
 const {MONGOURI} = require('./keys')
 
 require('./models/project')
+require('./models/assignment')
 
 app.use(express.json())
 app.use(require('./routes/project'))
+app.use(require('./routes/assignment'))
 
 
 
